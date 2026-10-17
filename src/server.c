@@ -58,7 +58,7 @@ int main(void) {
 
       // We respond to the HTTP GET request
 
-      char *status_line = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 13\r\nConnection: close\r\n\r\Fck Omarchy!\n";
+      char *status_line = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 13\r\nConnection: close\r\n\rFck Omarchy!\n";
       send(new_fd, status_line, strlen(status_line), 0);
     }
     else {
